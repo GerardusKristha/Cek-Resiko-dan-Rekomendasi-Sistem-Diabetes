@@ -1,56 +1,65 @@
-🩺 Aplikasi Cek Risiko dan Rekomendasi Sistem Diabetes
 
-Aplikasi ini bertujuan untuk membantu pengguna mengevaluasi risiko diabetes dan memberikan rekomendasi awal berbasis gejala dan aturan umum yang dimasukkan ke dalam sistem.
+# 🩺 Aplikasi Cek Risiko dan Rekomendasi Sistem Diabetes
 
-============================================================
-📁 Struktur Proyek
+Aplikasi ini membantu pengguna mengevaluasi risiko diabetes dan memberikan rekomendasi awal berbasis gejala dan aturan yang telah ditentukan. Dibuat untuk keperluan edukasi dan skripsi.
 
+## 📁 Struktur Folder
+
+```
 RS DIABETES/
 ├── Aplication/
-│   ├── Material/            # Gambar ikon dan antarmuka pengguna
-│   │   ├── image_1.png
-│   │   ├── image_2.png
-│   │   └── ...
-│   └── Rule/
-│       ├── data_gejala_obat.csv     # Data gejala dan obat-obatan
-│       └── rulesUmum.csv            # Aturan sistem rekomendasi
-├── Aplikasi_Cek_Resiko_DiabetesRS.py   # File utama (Python)
-└── Aplikasi_Cek_Resiko_DiabetesRS.exe  # Versi executable (Windows)
+│   ├── Material/                # Gambar antarmuka
+│   └── Rule/                    # Dataset dan aturan
+├── Aplikasi_Cek_Resiko_DiabetesRS.py   # Script utama (Python)
+└── Aplikasi_Cek_Resiko_DiabetesRS.exe  # File executable (Windows)
+```
 
-============================================================
-🚀 Fitur Utama
+## 🚀 Fitur
 
-- ✅ Evaluasi risiko diabetes berdasarkan gejala yang dipilih pengguna.
-- 💡 Sistem rekomendasi berbasis aturan (rule-based) untuk penanganan awal.
-- 📊 Interface visual dengan dukungan gambar dan tombol interaktif.
-- 🖥️ Bisa dijalankan langsung tanpa Python (via `.exe`).
+- ✅ Evaluasi risiko diabetes berdasarkan gejala pengguna
+- 💡 Rekomendasi tindakan awal menggunakan rule-based system
+- 🖼️ Antarmuka visual dengan tombol & ikon interaktif
+- 🖥️ Bisa dijalankan langsung di Windows (.exe) atau via Python
 
-============================================================
-🧪 Cara Menjalankan Aplikasi
+## 🧪 Cara Menjalankan
 
-🔹 Jika Menggunakan Python:
-1. Pastikan Python 3.x telah terinstal.
-2. Jalankan perintah:
+### 📌 Versi Python
+1. Pastikan Python 3.x terinstal
+2. Jalankan:
+   ```bash
    python Aplikasi_Cek_Resiko_DiabetesRS.py
+   ```
 
-🔹 Jika Menggunakan Windows:
-1. Jalankan langsung file:
-   Aplikasi_Cek_Resiko_DiabetesRS.exe
+### 📌 Versi Windows
+- Jalankan langsung:
+  ```
+  Aplikasi_Cek_Resiko_DiabetesRS.exe
+  ```
 
-============================================================
-📦 Kebutuhan (Opsional, jika pakai .py)
+## 📦 Kebutuhan (Jika menjalankan versi .py)
 
-Jika kamu menjalankan dari file .py, pastikan kamu punya:
-- Python 3.x
-- Pustaka GUI seperti `tkinter`, `pandas`, dan `csv`
-
-Install dengan:
+Install `pandas` jika belum tersedia:
+```bash
 pip install pandas
+```
 
-============================================================
-👨‍⚕️ Dataset & Rules
+Pastikan `tkinter` sudah tersedia (biasanya sudah include di Python).
 
-- data_gejala_obat.csv – Menyimpan daftar gejala dan obat terkait.
-- rulesUmum.csv – Aturan umum untuk sistem inferensi atau rekomendasi berbasis gejala.
+## 📊 Dataset & Aturan
 
-============================================================
+- `data_gejala_obat.csv` — Data gejala dan informasi obat
+- `rulesUmum.csv` — Aturan penilaian risiko & rekomendasi
+
+## 📄 Lisensi
+
+Proyek ini dikembangkan untuk keperluan proyek akhir dan edukasi.
+Silakan digunakan dengan mencantumkan kredit yang sesuai.
+
+## 🤝 Kontribusi
+
+Terbuka untuk saran dan pengembangan lebih lanjut, termasuk:
+- Integrasi machine learning
+- Pengembangan mobile apps
+- Penyempurnaan tampilan GUI
+
+---
